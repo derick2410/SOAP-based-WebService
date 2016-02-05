@@ -1,0 +1,28 @@
+Installation and Set-up Instructions:
+
+
+*** 
+<datasource jta="true" jndi-name="java:jboss/datasources/GMUOracleDS" pool-name="GMUOracleDS" enabled="true" use-java-context="true">
+                    <connection-url>jdbc:oracle:thin:@apollo.ite.gmu.edu:1521:ite10g</connection-url>
+                    <driver>oracle</driver>
+                    <security>
+                        <user-name>dcoutinh</user-name>
+                        <password>JesuMary25</password>
+                    </security>
+                    <validation>
+                        <validate-on-match>false</validate-on-match>
+                        <background-validation>false</background-validation>
+                    </validation>
+                </datasource>
+***
+
+
+1. Copy the "SWE645_CSD_EJB_JPA_JSF_WS.ear" file and paste it in the following folder of your JBoss location: "..jboss\standalone\deployments\"
+2. Open folder: "..\jboss\bin"
+3. Double click on "standalone.bat" file.
+4. Open any web browser and hit this link: "http://localhost:8080/SWE645_CSD_EJB_JPA_JSF_WS-client-war/index.jsf"
+
+
+
+
+WSDL Link:--- http://52.5.119.128/SWE645_CSD_EJB_JPA_JSF_WS-ejb/StudentSurveySessionBeanWS/StudentSurveySessionBeanWS?wsdl
